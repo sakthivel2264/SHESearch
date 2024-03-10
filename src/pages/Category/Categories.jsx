@@ -3,23 +3,9 @@ import Layout from "../../layout/Layout";
 import Footer from "../../components/Footer";
 
 const Categories = () => {
-  
   const handleButtonClick = (item) => {
-    if (item === "Childhood") {
-      window.location.href = "/childhood";
-    }
-    if (item === "Adulthood") {
-      window.location.href = "/adulthood";
-    }
-    if (item === "Pregnant Women") {
-      window.location.href = "/pregnantwomen";
-    }
-    if (item === "Middle Age") {
-      window.location.href = "/middleage";
-    }
-    if (item === "Old Age") {
-      window.location.href = "/senioryears";
-    }
+    // Redirect based on the clicked category
+    window.location.href = `/${item.toLowerCase().replace(" ", "")}`;
   };
 
   // Array of descriptions corresponding to each category
@@ -33,12 +19,12 @@ const Categories = () => {
 
   return (
     <>
-        <Header />
+      <Header/>
       <Layout>
-        <div className="container  py-20 mx-auto my-1o flex justify-center items-center gap-20 ">
-          <ul className="space-y-4 flex  gap-5">
+        <div className="container py-20 mx-auto my-10 flex justify-center items-center gap-20 ">
+          <ul className="space-y-4 flex gap-5">
             {["Childhood", "Adulthood", "Pregnant Women", "Middle Age", "Old Age"].map((item, index) => (
-              <li key={index} className="max-w-sm p-6 bg-pink-300 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-110 flex  flex-col h-25">
+              <li key={index} className="max-w-sm p-6 bg-pink-300 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-110 flex flex-col">
                 <button
                   className="cursor-pointer transition-all bg-blue-500 text-white px-6 py-2 rounded-lg
                   border-blue-600
@@ -49,7 +35,7 @@ const Categories = () => {
                   {item}
                 </button>
                 {/* Access the corresponding description using index */}
-                <p className=" py-4 font-normal text-gray-700 dark:text-gray-400">{details[index]}</p>
+                <p className="py-4 font-normal text-gray-700 dark:text-gray-400">{details[index]}</p>
               </li>
             ))}
           </ul>

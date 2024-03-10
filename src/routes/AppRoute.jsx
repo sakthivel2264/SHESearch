@@ -8,6 +8,9 @@ import Childhood from "../pages/Category/Childhood";
 import Adulthood from "../pages/Category/Adulthood";
 import Middleage from "../pages/Category/Middleage";
 import Senioryears from "../pages/Category/Senioryears";
+import Testimonials from "../components/Testimonials/Testimonials";
+import AboutUs from "../components/AboutUs/AboutUs";
+import HeaderFAQ from "../components/FAQ/HeaderFAQ";
 
 const AppRoute = () => {
   return (
@@ -22,6 +25,9 @@ const AppRoute = () => {
             <Route path="/pregnantwomen" element={<Pregnantwomen/>}/>
             <Route path="/middleage" element={<Middleage/>}/>
             <Route path="/senioryears" element={<Senioryears/>}/>
+            <Route path="/testimonials" element={<Testimonials/>}/>
+            <Route path="/aboutus" element={<AboutUs/>}/>
+            <Route path="/headerFAQ" element={<HeaderFAQ/>}/>
         </Routes>
     </Router>
   )
