@@ -3,6 +3,7 @@ import Messages from "../../components/Messages";
 import SendMessage from "../../components/SendMessage";
 import Layout from "../../layout/Layout";
 //import main from "../../services/askOpenAI"; // Import openai instance and main function
+import {askGemini} from "../../services/askGemini"
 
 const Chat = () => {
   const [messages, setMessages] = useState([]);
@@ -24,7 +25,7 @@ const Chat = () => {
     setMessages((prevMessages) => [...prevMessages, userMessage]);
 
     try {
-      const completion = await main(); // Call the main function to get AI response
+      const completion = await askGemini(); // Call the main function to get AI response
       const aiMessage = { username: "SheSearch", message: completion.choices[0] };
       setMessages((prevMessages) => [...prevMessages, aiMessage]);
     } catch (error) {

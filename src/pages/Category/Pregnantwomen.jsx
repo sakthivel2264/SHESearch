@@ -18,7 +18,7 @@ const Pregnantwomen = () => {
             allowfullscreen
             className="rounded-3xl h-4/5 w-[57vh] "
           /></div>
-            <Link to="/chat" className="flex justify-center">
+            <Link to="/chat1" className="flex justify-center">
                 <button className="bg-indigo-700 text-white  text-xl px-3 py-2 rounded-2xl hover:bg-purple-950">AI-Chat</button>
             </Link>
         </div>

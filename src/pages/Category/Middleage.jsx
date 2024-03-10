@@ -13,7 +13,7 @@ const Middleage = () => {
             <h1 className="text-white mt-10">Middle Age</h1>
         <div className="mt-20 flex gap-4">
             
-            <Link to="/chat">
+            <Link to="/chat1">
                 <button className="bg-indigo-700 text-white  text-xl px-3 py-2 rounded-2xl hover:bg-purple-950">AI-Chat</button>
             </Link>
             <button className="bg-indigo-700 text-white  text-xl px-3 py-2 rounded-2xl hover:bg-purple-950">Naming</button>
