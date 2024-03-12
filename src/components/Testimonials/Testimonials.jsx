@@ -33,14 +33,14 @@ const Testimonials = () => {
   return (
     <>
       <Header />
-      <div className="max-w-lg mx-auto p-2 ">
-        <h2 className="text-3xl font-bold ">Testimonials</h2>
-        <div className="space-y-6">
+      <div className=" m-auto p-2 mb-28 mx-10">
+        <h2 className="text-4xl font-bold text-white text-center mb-9 "><span className="text-5xl">T</span>estimonials</h2>
+        <div className="flex h-[350px] gap-10 ">
           {testimonialsData.map(testimonial => (
-            <div key={testimonial.id} className="bg-white rounded-lg p-6 shadow-md">
-              <p className="text-gray-800 mb-4">{testimonial.text}</p>
-              <p className="font-bold">{testimonial.name}</p>
-              <p className="italic">{testimonial.position}</p>
+            <div key={testimonial.id} className="bg-black/50 backdrop-blur-lg rounded-lg p-6 shadow-lg shadow-slate-100 bg-opacity-60 ring-1 ring-white text-white hover:shadow-none hover:scale-105 cursor-default transition-all" >
+              <p className="mb-4 text-center">{testimonial.text}</p>
+              <p className="font-light text-center mb-2"><span>{testimonial.name}</span></p>
+              <p className="italic text-center">{testimonial.position}</p>
             </div>
           ))}
         </div>

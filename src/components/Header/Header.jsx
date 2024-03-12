@@ -2,36 +2,25 @@ import { Link } from "react-router-dom";
 
 const  Header = () => {
 
-  const handleFAQ = () =>{
-    window.location.href = "/headerFAQ"
-  }
-  const handleTestimonials =() =>{
-    window.location.href = "/testimonials"
-  }
-  const handleAboutUs =() =>{
-    window.location.href ="/aboutus"
-  }
-
   return (
-    <header className="bg-black/50  py-5 w-full flex justify-around items-center text-white sticky top-0 backdrop-blur-md mb-10">
+    <header className="bg-black/50  py-2 w-full flex justify-around items-center text-white sticky top-0 backdrop-blur-md mb-10 z-50 border-b-[1px]">
 
-      <a href="/" className="flex justify-center items-center text-2xl "><span className="py-2 text-3xl font-bold bg-gradient-to-r from-yellow-300 to-orange-400 text-transparent bg-clip-text">She </span>&nbsp;Search</a>
+      <Link to="/" className="flex justify-center items-center text-2xl "><span>She </span>&nbsp;Search</Link>
 
-      <ul className="flex justify-center items-center gap-20">
-        <li className="text-white hover:text-purple-700  cursor-pointer drop-shadow-lg" onClick={handleAboutUs}>
-          AboutUs
-        </li>
-        <li className="text-white hover:text-purple-700  cursor-pointer drop-shadow-lg" onClick={handleTestimonials}>
-          Testimonials
-        </li>
-        <a href="#faq"className="text-white hover:text-purple-700  cursor-pointer drop-shadow-lg" onClick={handleFAQ}>
+      <ul className="flex justify-center items-center gap-20 text-[1.3rem]">
+        {/* About */}
+        <Link to="/about" className="text-white hover:text-yellow-300  cursor-pointer drop-shadow-lg">About</Link>
+        {/* Testimonials */}
+        <Link to="/testimonials"  className="text-white hover:text-yellow-300  cursor-pointer drop-shadow-lg">Testimonials</Link>
+        {/* FAQ */}
+        <Link to="/headerFAQ"className="text-white hover:text-yellow-300  cursor-pointer drop-shadow-lg">
           FAQ
-        </a>
+        </Link>
       </ul>
 
       {/* Get Started button */}
       <Link to="/categories">
-        <button className="bg-pink-600 text-white  text-xl px-3 py-2 rounded-2xl hover:bg-purple-950 drop-shadow-lg">
+        <button className="bg-pink-800 text-white  text-xl px-3 py-2 rounded-lg hover:bg-purple-950 drop-shadow-lg right-1 ring-white">
           Get Started
         </button>
       </Link>
