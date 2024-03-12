@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const genAI = new GoogleGenerativeAI(import.meta.env.API_KEY);
+const genAI = new GoogleGenerativeAI(import.meta.env.VITE_API_KEY);
 
 export const askGemini = async (prompt) => {
     console.log(prompt);

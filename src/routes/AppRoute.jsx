@@ -20,7 +20,7 @@ const AppRoute = () => {
             <Route path="/" element={<LandingPage/>}/>
             <Route path="/chat" element={<Chat/>}/>
             <Route path="/chat1" element={<GenAIComponent/>}/>
-            <Route path="/FAQ" element={<FAQ/>}></Route>
+            <Route path="/faq" element={<FAQ/>}></Route>
             <Route path="/categories" element={<Categories/>}/>
             <Route path="/childhood" element={<Childhood/>}/>
             <Route path="/adulthood" element={<Adulthood/>}/>
@@ -28,7 +28,7 @@ const AppRoute = () => {
             <Route path="/middleage" element={<Middleage/>}/>
             <Route path="/senioryears" element={<Senioryears/>}/>
             <Route path="/testimonials" element={<Testimonials/>}/>
-            <Route path="/aboutus" element={<AboutUs/>}/>
+            <Route path="/about" element={<AboutUs/>}/>
             <Route path="/headerFAQ" element={<HeaderFAQ/>}/>
         </Routes>
     </Router>

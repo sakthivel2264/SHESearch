@@ -1,5 +1,7 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
+import Header from "../Header";
+import Footer from "../Footer";
 
 const FaqItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,6 +54,8 @@ const FAQ = () => {
   ];
 
   return (
+    <>
+    {/* <Header/> */}
     <div className="my-10 mt-32 flex flex-col w-full">
       <h2 className="px-32 text-5xl  font-bold text-white mb-8">
         Frequently Asked Questions
@@ -68,6 +72,8 @@ const FAQ = () => {
         })}
       </div>
     </div>
+    {/* <Footer/> */}
+    </>
   );
 };
 

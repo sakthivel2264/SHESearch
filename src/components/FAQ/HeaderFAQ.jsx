@@ -9,7 +9,7 @@ const FaqItem = ({ question, answer }) => {
   return (
     <div className=" rounded-lg mb-4" id="faq">
       <button
-        className="w-full text-left py-2 px-4   text-white hover:bg-purple-950 focus:outline-none"
+        className="w-full text-left py-2 px-4   text-white hover:bg-white/ focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
         {question}
@@ -57,8 +57,8 @@ const HeaderFAQ = () => {
     <>
     <Header/>
     <div className="my-10 mt-32 flex flex-col w-full">
-      <h2 className="px-32 text-5xl  font-bold text-white mb-8">
-        Frequently Asked Questions
+      <h2 className="px-32 text-5xl  font-bold text-white mb-8 text-center">
+       <span className="text-5xl">F</span>requently <span className="text-5xl">A</span>sked <span className="text-5xl">Q</span>uestions
       </h2>
       <div className="px-40 text-lg">
         {pregnancyFAQ.map(({ question, answer }) => {
