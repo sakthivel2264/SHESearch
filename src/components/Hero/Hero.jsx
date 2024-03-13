@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import FighterWoman from "../../assets/img/Hero.png";
 const Hero = () => {
   return (
-    <div className="my-10  flex justify-center items-center gap-40 flex-col ">
+    <div className="my-10  flex justify-center items-center gap-40 flex-col p-7">
       <div className=" my-10 flex justify-between items-center ">
         {/* Left Part */}
         <div className=" flex flex-col justify-center items-start gap-1 tracking-wider">
