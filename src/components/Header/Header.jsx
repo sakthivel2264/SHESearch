@@ -19,9 +19,9 @@ const  Header = () => {
       </ul>
 
       {/* Get Started button */}
-      <Link to="/categories">
+      <Link to="/signup">
         <button className="bg-pink-800 text-white  text-xl px-3 py-2 rounded-lg hover:bg-purple-950 drop-shadow-lg right-1 ring-white">
-          Get Started
+          Signup
         </button>
       </Link>
     </header>

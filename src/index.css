@@ -14,3 +14,4 @@ body {
 span {
   @apply py-2 text-4xl font-bold bg-gradient-to-r from-yellow-300 to-orange-400 text-transparent bg-clip-text
 }
+

@@ -9,7 +9,7 @@ const FaqItem = ({ question, answer }) => {
   return (
     <div className=" rounded-lg mb-4" id="faq">
       <button
-        className="w-full text-left py-2 px-4   text-white hover:bg-white/ focus:outline-none"
+        className="w-full text-left py-2 px-4   text-white hover:bg-white/10 focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
         {question}

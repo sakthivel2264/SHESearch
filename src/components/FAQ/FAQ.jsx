@@ -1,22 +1,20 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-import Header from "../Header";
-import Footer from "../Footer";
 
 const FaqItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className=" rounded-lg mb-4" id="faq">
+    <div className=" rounded-lg mb-4 transition-all ring-1 ring-current " >
       <button
-        className="w-full text-left py-2 px-4   text-white hover:bg-purple-950 focus:outline-none"
+        className="w-full text-left py-2 px-4   text-white hover:bg-white/10  focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
         {question}
-        <span className="float-right">{isOpen ? "-" : "+"}</span>
+        <span className="float-right transition-all">{isOpen ? "-" : "+"}</span>
       </button>
       {isOpen && (
-        <div className="p-4  w-full">
+        <div className="p-4  w-full transition-all ">
           <p className="text-gray-400 w-4/5  text-wrap">{answer}</p>
         </div>
       )}
@@ -55,12 +53,11 @@ const FAQ = () => {
 
   return (
     <>
-    {/* <Header/> */}
     <div className="my-10 mt-32 flex flex-col w-full">
-      <h2 className="px-32 text-5xl  font-bold text-white mb-8">
+      <h2 className="text-center text-5xl  font-bold text-white mb-8">
         Frequently Asked Questions
       </h2>
-      <div className="px-40 text-lg">
+      <div className="px-10 text-lg">
         {pregnancyFAQ.map(({ question, answer }) => {
           return (
             <FaqItem
@@ -72,7 +69,6 @@ const FAQ = () => {
         })}
       </div>
     </div>
-    {/* <Footer/> */}
     </>
   );
 };
