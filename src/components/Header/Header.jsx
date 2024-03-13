@@ -8,8 +8,8 @@ const  Header = () => {
       <Link to="/" className="flex justify-center items-center text-2xl "><span>She </span>&nbsp;Search</Link>
 
       <ul className="flex justify-center items-center gap-20 text-[1.3rem]">
-        {/* About */}
-        <Link to="/about" className="text-white hover:text-yellow-300  cursor-pointer drop-shadow-lg">About</Link>
+        {/* AboutUs */}
+        <Link to="/about" className="text-white hover:text-yellow-300  cursor-pointer drop-shadow-lg">AboutUs</Link>
         {/* Testimonials */}
         <Link to="/testimonials"  className="text-white hover:text-yellow-300  cursor-pointer drop-shadow-lg">Testimonials</Link>
         {/* FAQ */}
