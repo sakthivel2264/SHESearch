@@ -16,7 +16,7 @@ const Childhood = () => {
             src="https://www.youtube.com/embed/wLtjwdkdRk8"
             title="YouTube video"
             allowfullscreen
-            className="rounded-3xl h-4/5 w-[57vh] "
+            className="rounded-3xl h-4/5 w-[57vh]"
           /></div>
             <Link to="/chat" className="flex justify-center">
                 <button className="bg-indigo-700 text-white  text-xl px-3 py-2 rounded-2xl hover:bg-purple-950">AI-Chat</button>

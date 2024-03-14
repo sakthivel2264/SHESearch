@@ -12,13 +12,14 @@ import Testimonials from "../components/Testimonials/Testimonials";
 import AboutUs from "../components/AboutUs/AboutUs";
 import HeaderFAQ from "../components/FAQ/HeaderFAQ";
 import GenAIComponent from "../pages/Chat/Chat1";
-
+import Signup from "../pages/auth/Signup";
 const AppRoute = () => {
   return (
     <Router>
         <Routes>
             <Route path="/" element={<LandingPage/>}/>
             <Route path="/chat" element={<Chat/>}/>
+            <Route path="/signup" element={<Signup/>}/>
             <Route path="/chat1" element={<GenAIComponent/>}/>
             <Route path="/faq" element={<FAQ/>}></Route>
             <Route path="/categories" element={<Categories/>}/>
